@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockService id="1a0992ea-b1df-4ac0-ac2f-e821fc4692b4" port="8088" path="/mockApiPortSoap11" host="DESKTOP-29V4J49" name="Soap11Mock" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="registerCall" id="3169cd08-abba-4d60-b2b3-28164b539f04" interface="ApiPortSoap11" operation="registerCall"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="a6135c02-2044-4be0-a52e-298339db2fe6" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:lab1="http://amw.gdynia.pl/sao/lab1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <lab1:registerCallResponse>
+         <lab1:exercise>
+            <lab1:name>Marek Hennig</lab1:name>
+            <lab1:note>Student Wykonal laborke</lab1:note>
+         </lab1:exercise>
+      </lab1:registerCallResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://amw.gdynia.pl/sao/lab1/ApiPort/registerCallResponse"/></con:response><con:dispatchConfig/></con:mockOperation><con:mockOperation name="results" id="d13edce6-e451-4965-b452-26b6f53dd293" interface="ApiPortSoap11" operation="results"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:response name="Response 1" id="b8773feb-c44b-4e1d-b90b-04df2a4a9686" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:lab1="http://amw.gdynia.pl/sao/lab1">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <lab1:resultsResponse>
+         <!--1 or more repetitions:-->
+         <lab1:entry>result of the response</lab1:entry>
+      </lab1:resultsResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://amw.gdynia.pl/sao/lab1/ApiPort/resultsResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService>
